@@ -2,3 +2,26 @@ h1 {
     color: hotpink;
     font-family: cursive;
 }
+body {
+    margin: 16px;
+    line-height: 1.5;
+    color: #212121;
+    font-family: sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+input{
+    padding: 10px;
+}
+.track-list {
+    margin: 0;
+    list-style: none;
+    padding: 24px;
+}
+
+.track-list li:not(:last-child) {
+    margin-bottom: 16px;
+}

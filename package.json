@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "lodash.debounce": "^4.0.8",
     "parcel": "^2.8.1"
   },
   "devDependencies": {},
@@ -16,6 +17,7 @@
     "url": "git+https://github.com/KseniaLF/practice-lightit.git"
   },
   "keywords": [],
+  "source": "index.html",
   "author": "Ksenia <llf9391@gmail.com>",
   "license": "ISC",
   "bugs": {
