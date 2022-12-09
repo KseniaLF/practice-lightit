@@ -33,12 +33,25 @@ function fetchTracks(searchQuery) {
 function renderUserList(tracks) {
   const markup = tracks
     .map((track) => {
-      return `<li>
-          <p><b>artistName</b>: ${track.artistName}</p>
-          <p><b>trackName</b>: ${track.trackName}</p>
-          <p><b>collectionName</b>: ${track.collectionName}</p>
-          <p><b>primaryGenreName</b>: ${track.primaryGenreName}</p>
-        </li>`;
+      // return `<li>
+      //     <p><b>artistName</b>: ${track.artistName}</p>
+      //     <p><b>trackName</b>: ${track.trackName}</p>
+      //     <p><b>collectionName</b>: ${track.collectionName}</p>
+      //     <p><b>primaryGenreName</b>: ${track.primaryGenreName}</p>
+      //   </li>`;
+    
+{/* <div class="box">{artworkUrl100}</div> */}
+      return `<tr>
+                <td><div class="box">
+                <img src=${track.artworkUrl100} alt="img">
+                </div></td>
+                <td>${track.artistName}</td>
+                <td>${track.trackName}</td>
+                <td>${track.collectionName}</td>
+                <td>${track.primaryGenreName}</td>
+                <td>+</td>
+            </tr>`
+
     })
     .join("");
   trackList.innerHTML = markup;
