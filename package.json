@@ -1,0 +1,25 @@
+{
+  "name": "practice-lightit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "parcel": "^2.8.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KseniaLF/practice-lightit.git"
+  },
+  "keywords": [],
+  "author": "Ksenia <llf9391@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KseniaLF/practice-lightit/issues"
+  },
+  "homepage": "https://github.com/KseniaLF/practice-lightit#readme"
+}
