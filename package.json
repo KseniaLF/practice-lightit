@@ -2,7 +2,7 @@
   "name": "practice-lightit",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  
   "dependencies": {
     "lodash.debounce": "^4.0.8",
     "parcel": "^2.8.1"
