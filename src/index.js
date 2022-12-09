@@ -1,10 +1,11 @@
-import debounce from "lodash.debounce";
+// import debounce from "lodash.debounce";
 
 const input = document.querySelector("input");
 const trackList = document.querySelector(".track-list");
 
 
-input.addEventListener("input", debounce(onInput, 1000));
+// input.addEventListener("input", debounce(onInput, 1000));
+input.addEventListener("input", onInput);
 
 function onInput(event) {
     const searchQuery = event.target.value.trim();
