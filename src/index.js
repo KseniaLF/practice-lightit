@@ -2,29 +2,22 @@
 
 const input = document.querySelector("input");
 const trackList = document.querySelector(".track-list");
-const infoBox = document.querySelector(".info-box");
-// const btnInfoBox = document.querySelector(".btn-info-box");
+// 
 let btnInfoBox;
+let infoBox = "";
 
 // input.addEventListener("input", debounce(onInput, 1000));
 input.addEventListener("input", onInput);
 
 function onInput(event) {
-    const searchQuery = event.target.value.trim();
-    console.log(searchQuery)
-    if (searchQuery !== "") {
-        fetchTracks(searchQuery)
-          .then((tracks) => renderUserList(tracks.results))
-        // .then((tracks) => console.log(tracks.results[0]))
-        .catch((error) => console.log(error));
-
-      // btnInfoBox.addEventListener("click", onDenailClick);
+  const searchQuery = event.target.value.trim();
+  console.log(searchQuery)
+  if (searchQuery !== "") {
+      fetchTracks(searchQuery)
+        .then((tracks) => renderUserList(tracks.results))
+      // .then((tracks) => console.log(tracks.results[0]))
+      .catch((error) => console.log(error));
   }
-   
-}
-
-if (btnInfoBox) {
-   console.log(6)
 }
       
 function fetchTracks(searchQuery) {
@@ -38,9 +31,8 @@ function fetchTracks(searchQuery) {
   );
 }
 
-
 function renderUserList(tracks) {
-  
+  // console.log(tracks)
   const markup = tracks
     .map((track) => {
       return `<tr>
@@ -53,32 +45,41 @@ function renderUserList(tracks) {
                 <td>${track.primaryGenreName}</td>
                 
                 <td><button class="btn-info-box" type="button">+</button></td>
-            </tr>`
+            </tr>
+            <tr class="info-box"></tr>`
     })
     .join("");
   trackList.innerHTML = markup;
 
   btnInfoBox = document.querySelectorAll(".btn-info-box");
   for (let i = 0; i < btnInfoBox.length; i++) {
-    btnInfoBox[i].addEventListener("click", onDenailClick);
+    // console.log(tracks[i])
+    btnInfoBox[i].addEventListener("click", () => {onDetailClick(tracks[i], i)});
   }
-  // clickOnDetail(btnInfoBox)
-  // btnInfoBox.addEventListener("click", onDenailClick);
-  
-  
+
 }
 
+function onDetailClick(track, i) {
+  infoBox = document.querySelectorAll(".info-box");
+  const markup = `<td></td>
+  <td>
+    <p>${track.artistName} - ${track.trackName}</p>
+    <p>Collection: ${track.collectionName}</p>
+    <p>Track Count: ${track.trackCount}</p>
+    <p>Price: ${track.collectionPrice}</p>
+  </td>
+  <td></td>
+  <td>
+    <p>Track duration: ${track.trackTimeMillis}</p>
+    <p>Track price: ${track.trackPrice}</p>
+  </td>`
+  console.log(track)
 
-  function clickOnDetail(btn) {
-    // btn = document.querySelector(".btn-info-box");
-    btn.addEventListener("click", onDenailClick);
-  }
-  function onDenailClick() {
-    console.log(55555555555)
+  infoBox.forEach(function (item) { 
+    if (item !== "") {
+      item.innerHTML = "";
+    }
+  })
+  infoBox[i].innerHTML = markup;
   }
 
-// btnInfoBox.addEventListener("click", () => alert('Спасибо!'));
-// if (btnInfoBox) {
-//   clickOnDetail(btnInfoBox);
-// }
-console.log(btnInfoBox)
