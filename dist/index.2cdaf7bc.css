@@ -63,4 +63,15 @@ th, td {
   object-position: center;
 }
 
+.btn-info-box {
+  background-color: inherit;
+  width: 50px;
+  color: #000;
+  text-align: center;
+  border: none;
+  font-size: 40px;
+  text-decoration: none;
+  display: inline-block;
+}
+
 /*# sourceMappingURL=index.2cdaf7bc.css.map */

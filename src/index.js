@@ -5,6 +5,7 @@ const trackList = document.querySelector(".track-list");
 // 
 let btnInfoBox;
 let infoBox = "";
+let activeBtnInfoBox;
 
 // input.addEventListener("input", debounce(onInput, 1000));
 input.addEventListener("input", onInput);
@@ -51,16 +52,30 @@ function renderUserList(tracks) {
     .join("");
   trackList.innerHTML = markup;
 
+  infoBox = document.querySelectorAll(".info-box");
   btnInfoBox = document.querySelectorAll(".btn-info-box");
   for (let i = 0; i < btnInfoBox.length; i++) {
     // console.log(tracks[i])
-    btnInfoBox[i].addEventListener("click", () => {onDetailClick(tracks[i], i)});
+    
+    btnInfoBox[i].addEventListener("click", () => {
+      btnInfoBox[i].classList.toggle("active-btn");
+      activeBtnInfoBox = document.querySelector(".active-btn")
+ 
+      if (btnInfoBox[i].classList.contains("active-btn")) {
+        renderDetailInfo(tracks[i], i)
+        btnInfoBox[i].innerHTML = "-";
+      }
+      else {
+        btnInfoBox[i].innerHTML = "+";
+        infoBox[i].innerHTML = "";
+      }      
+    });
   }
 
 }
 
-function onDetailClick(track, i) {
-  infoBox = document.querySelectorAll(".info-box");
+function renderDetailInfo(track, i) {
+  // infoBox = document.querySelectorAll(".info-box");
   const markup = `<td></td>
   <td>
     <p>${track.artistName} - ${track.trackName}</p>
@@ -83,3 +98,5 @@ function onDetailClick(track, i) {
   infoBox[i].innerHTML = markup;
   }
 
+// activeBtnInfoBox = document.querySelector(".foo")
+// console.log(activeBtnInfoBox + 66666666666)

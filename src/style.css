@@ -61,3 +61,14 @@ td {
     object-fit: contain;
     object-position: center;
 }
+
+.btn-info-box{
+    background-color: inherit;
+    border: none;
+    width: 50px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+}
