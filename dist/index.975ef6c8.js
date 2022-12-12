@@ -570,23 +570,9 @@ function renderUserList(tracks) {
             <tr class="info-box"></tr>`;
     }).join("");
     trackList.innerHTML = markup;
-    infoBox = document.querySelectorAll(".info-box");
-    btnInfoBox = document.querySelectorAll(".btn-info-box");
-    for(let i = 0; i < btnInfoBox.length; i++)// console.log(tracks[i])
-    btnInfoBox[i].addEventListener("click", ()=>{
-        btnInfoBox[i].classList.toggle("active-btn");
-        activeBtnInfoBox = document.querySelector(".active-btn");
-        if (btnInfoBox[i].classList.contains("active-btn")) {
-            renderDetailInfo(tracks[i], i);
-            btnInfoBox[i].innerHTML = "-";
-        } else {
-            btnInfoBox[i].innerHTML = "+";
-            infoBox[i].innerHTML = "";
-        }
-    });
+    onDetailInfoClick(tracks);
 }
 function renderDetailInfo(track, i) {
-    // infoBox = document.querySelectorAll(".info-box");
     const markup = `<td></td>
   <td>
     <p>${track.artistName} - ${track.trackName}</p>
@@ -600,12 +586,31 @@ function renderDetailInfo(track, i) {
     <p>Track price: ${track.trackPrice}</p>
   </td>`;
     console.log(track);
-    infoBox.forEach(function(item) {
-        if (item !== "") item.innerHTML = "";
-    });
     infoBox[i].innerHTML = markup;
-} // activeBtnInfoBox = document.querySelector(".foo")
- // console.log(activeBtnInfoBox + 66666666666)
+}
+function onDetailInfoClick(tracks) {
+    infoBox = document.querySelectorAll(".info-box");
+    btnInfoBox = document.querySelectorAll(".btn-info-box");
+    for(let i = 0; i < btnInfoBox.length; i++)btnInfoBox[i].addEventListener("click", ()=>{
+        btnInfoBox.forEach(function(item) {
+            if (item.classList.contains("active-btn")) {
+                item.classList.remove("active-btn");
+                item.innerHTML = "+";
+            }
+        });
+        btnInfoBox[i].classList.toggle("active-btn");
+        if (btnInfoBox[i].classList.contains("active-btn")) {
+            infoBox.forEach(function(item) {
+                if (item !== "") item.innerHTML = "";
+            });
+            renderDetailInfo(tracks[i], i);
+            btnInfoBox[i].innerHTML = "-";
+        } else {
+            btnInfoBox[i].innerHTML = "+";
+            infoBox[i].innerHTML = "";
+        }
+    });
+}
 
 },{}]},["ShInH","8lqZg"], "8lqZg", "parcelRequire0833")
 
