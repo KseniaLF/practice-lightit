@@ -615,7 +615,7 @@ function onDetailInfoClick(tracks) {
     });
 }
 
-},{"./style.css":"bhJkM","lodash.debounce":"3JP5n","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bhJkM":[function() {},{}],"3JP5n":[function(require,module,exports) {
+},{"lodash.debounce":"3JP5n","./style.css":"bhJkM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3JP5n":[function(require,module,exports) {
 /**
  * lodash (Custom Build) <https://lodash.com/>
  * Build: `lodash modularize exports="npm" -o ./`
@@ -900,7 +900,7 @@ var FUNC_ERROR_TEXT = "Expected a function";
 }
 module.exports = debounce;
 
-},{}],"gkKU3":[function(require,module,exports) {
+},{}],"bhJkM":[function() {},{}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a

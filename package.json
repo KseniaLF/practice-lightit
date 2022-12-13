@@ -2,6 +2,7 @@
   "name": "practice-lightit",
   "version": "1.0.0",
   "description": "",
+  "main": "index.js",
   "dependencies": {
     "lodash.debounce": "^4.0.8",
     "parcel": "^2.8.1"
@@ -13,10 +14,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KseniaLF/practice-lightit/src.git"
+    "url": "git+https://github.com/KseniaLF/practice-lightit.git"
   },
   "keywords": [],
-  "source": "index.html",
   "author": "Ksenia <llf9391@gmail.com>",
   "license": "ISC",
   "bugs": {
