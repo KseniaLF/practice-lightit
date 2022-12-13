@@ -16,7 +16,7 @@
 110D:\all\practice\lightit\practice-lightit\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\tooltag121436361000000000 0
 55D:\all\practice\lightit\practice-lightit\.gitattributes133150461075927009 0
 86D:\all\practice\lightit\practice-lightit\node_modules\css-what\lib\commonjs\types.d.ts121436361000000000 0
-53D:\all\practice\lightit\practice-lightit\package.json133154181709488194 0
+53D:\all\practice\lightit\practice-lightit\package.json133154188139014327 0
 78D:\all\practice\lightit\practice-lightit\node_modules\escalade\sync\index.d.ts121436361000000000 0
 80D:\all\practice\lightit\practice-lightit\node_modules\caniuse-lite\data\features133150469802856618 1
 108D:\all\practice\lightit\practice-lightit\node_modules\@parcel\runtime-browser-hmr\src\loaders\.eslintrc.json121436361000000000 0
@@ -32,7 +32,7 @@
 88D:\all\practice\lightit\practice-lightit\node_modules\@parcel\optimizer-css\package.json133150469831307283 0
 84D:\all\practice\lightit\practice-lightit\node_modules\@parcel\optimizer-htmlnano\src133150469729248116 1
 62D:\all\practice\lightit\practice-lightit\node_modules\css-what133150469829372446 1
-45D:\all\practice\lightit\practice-lightit\dist133154184822401241 1
+45D:\all\practice\lightit\practice-lightit\dist133154188140687213 1
 97D:\all\practice\lightit\practice-lightit\node_modules\css-tree\lib\definition-syntax\tokenizer.js121436361000000000 0
 78D:\all\practice\lightit\practice-lightit\node_modules\csso\lib\clean\Atrule.js121436361000000000 0
 74D:\all\practice\lightit\practice-lightit\node_modules\json5\lib\unicode.js121436361000000000 0
@@ -3671,7 +3671,7 @@
 82D:\all\practice\lightit\practice-lightit\node_modules\@parcel\resolver-default\lib133150469731696673 1
 123D:\all\practice\lightit\practice-lightit\node_modules\@parcel\transformer-html\node_modules\posthtml-parser\dist\index.d.ts121436361000000000 0
 92D:\all\practice\lightit\practice-lightit\node_modules\@parcel\transformer-html\lib\inline.js121436361000000000 0
-68D:\all\practice\lightit\practice-lightit\dist\index.2cdaf7bc.css.map133154184702061008 0
+68D:\all\practice\lightit\practice-lightit\dist\index.2cdaf7bc.css.map133154188140667249 0
 85D:\all\practice\lightit\practice-lightit\node_modules\@parcel\transformer-css\LICENSE121436361000000000 0
 99D:\all\practice\lightit\practice-lightit\node_modules\@parcel\transformer-css\src\CSSTransformer.js121436361000000000 0
 99D:\all\practice\lightit\practice-lightit\node_modules\@parcel\transformer-css\lib\CSSTransformer.js121436361000000000 0
@@ -3940,7 +3940,7 @@
 80D:\all\practice\lightit\practice-lightit\node_modules\@parcel\graph\package.json133150469833629920 0
 72D:\all\practice\lightit\practice-lightit\node_modules\@parcel\graph\test133150469758930183 1
 94D:\all\practice\lightit\practice-lightit\node_modules\@parcel\graph\test\AdjacencyList.test.js121436361000000000 0
-56D:\all\practice\lightit\practice-lightit\dist\index.html133154184822341388 0
+56D:\all\practice\lightit\practice-lightit\dist\index.html133154188140627359 0
 84D:\all\practice\lightit\practice-lightit\node_modules\@parcel\graph\test\integration133150469751501197 1
 115D:\all\practice\lightit\practice-lightit\node_modules\@parcel\graph\test\integration\adjacency-list-shared-array.js121436361000000000 0
 113D:\all\practice\lightit\practice-lightit\node_modules\@msgpackr-extract\msgpackr-extract-win32-x64\node.napi.node121436361000000000 0
@@ -4166,7 +4166,7 @@
 83D:\all\practice\lightit\practice-lightit\node_modules\@babel\highlight\lib\index.js121012626000000000 0
 92D:\all\practice\lightit\practice-lightit\node_modules\@babel\helper-validator-identifier\lib133150469724859856 1
 101D:\all\practice\lightit\practice-lightit\node_modules\@babel\helper-validator-identifier\package.json133150469829143058 0
-67D:\all\practice\lightit\practice-lightit\dist\index.975ef6c8.js.map133154184702250498 0
+67D:\all\practice\lightit\practice-lightit\dist\index.975ef6c8.js.map133154188140657284 0
 98D:\all\practice\lightit\practice-lightit\node_modules\@babel\helper-validator-identifier\README.md121012626000000000 0
 96D:\all\practice\lightit\practice-lightit\node_modules\@babel\helper-validator-identifier\scripts133150469726924334 1
 125D:\all\practice\lightit\practice-lightit\node_modules\@babel\helper-validator-identifier\scripts\generate-identifier-regex.js121012626000000000 0
@@ -4206,14 +4206,14 @@
 65D:\all\practice\lightit\practice-lightit\node_modules\.bin\terser133150469836932948 0
 69D:\all\practice\lightit\practice-lightit\node_modules\.bin\terser.cmd133150469836932948 0
 67D:\all\practice\lightit\practice-lightit\dist\index.0641b553.js.map133150836734922844 0
-64D:\all\practice\lightit\practice-lightit\dist\index.2cdaf7bc.css133154184701991183 0
+64D:\all\practice\lightit\practice-lightit\dist\index.2cdaf7bc.css133154188140627359 0
 63D:\all\practice\lightit\practice-lightit\dist\index.63abffff.js133154024765968918 0
 67D:\all\practice\lightit\practice-lightit\dist\index.63abffff.js.map133154024766096252 0
 63D:\all\practice\lightit\practice-lightit\dist\index.65325268.js133150838291430933 0
 64D:\all\practice\lightit\practice-lightit\dist\index.791243f3.css133154184112882350 0
 68D:\all\practice\lightit\practice-lightit\dist\index.791243f3.css.map133154184112982098 0
 67D:\all\practice\lightit\practice-lightit\dist\index.7af8f2fc.js.map133150845298929678 0
-63D:\all\practice\lightit\practice-lightit\dist\index.975ef6c8.js133154184702210600 0
+63D:\all\practice\lightit\practice-lightit\dist\index.975ef6c8.js133154188140607405 0
 67D:\all\practice\lightit\practice-lightit\dist\index.9ca95fef.js.map133154184112982098 0
 74D:\all\practice\lightit\practice-lightit\dist\practice-lightit.59712999.js133154183370555466 0
 78D:\all\practice\lightit\practice-lightit\dist\practice-lightit.59712999.js.map133154183370585333 0

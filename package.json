@@ -13,10 +13,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KseniaLF/practice-lightit.git"
+    "url": "git+https://github.com/KseniaLF/practice-lightit/src.git"
   },
   "keywords": [],
-
+  "source": "index.html",
   "author": "Ksenia <llf9391@gmail.com>",
   "license": "ISC",
   "bugs": {
