@@ -8,15 +8,15 @@
   },
   "devDependencies": {},
   "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KseniaLF/practice-lightit.git"
   },
   "keywords": [],
-  "source": "index.html",
+
   "author": "Ksenia <llf9391@gmail.com>",
   "license": "ISC",
   "bugs": {

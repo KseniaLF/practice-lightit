@@ -1,4 +1,5 @@
 // import debounce from "lodash.debounce";
+i;
 const input = document.querySelector("input");
 const trackList = document.querySelector(".track-list");
 // 
@@ -38,7 +39,7 @@ function renderUserList(tracks) {
     trackList.innerHTML = markup;
     onDetailInfoClick(tracks);
 }
-function renderDetailInfo(track, i) {
+function renderDetailInfo(track, i1) {
     const markup = `<td></td>
   <td>
     <p>${track.artistName} - ${track.trackName}</p>
@@ -52,28 +53,28 @@ function renderDetailInfo(track, i) {
     <p>Track price: ${track.trackPrice}</p>
   </td>`;
     console.log(track);
-    infoBox[i].innerHTML = markup;
+    infoBox[i1].innerHTML = markup;
 }
 function onDetailInfoClick(tracks) {
     infoBox = document.querySelectorAll(".info-box");
     btnInfoBox = document.querySelectorAll(".btn-info-box");
-    for(let i = 0; i < btnInfoBox.length; i++)btnInfoBox[i].addEventListener("click", ()=>{
+    for(let i1 = 0; i1 < btnInfoBox.length; i1++)btnInfoBox[i1].addEventListener("click", ()=>{
         btnInfoBox.forEach(function(item) {
             if (item.classList.contains("active-btn")) {
                 item.classList.remove("active-btn");
                 item.innerHTML = "+";
             }
         });
-        btnInfoBox[i].classList.toggle("active-btn");
-        if (btnInfoBox[i].classList.contains("active-btn")) {
+        btnInfoBox[i1].classList.toggle("active-btn");
+        if (btnInfoBox[i1].classList.contains("active-btn")) {
             infoBox.forEach(function(item) {
                 if (item !== "") item.innerHTML = "";
             });
-            renderDetailInfo(tracks[i], i);
-            btnInfoBox[i].innerHTML = "-";
+            renderDetailInfo(tracks[i1], i1);
+            btnInfoBox[i1].innerHTML = "-";
         } else {
-            btnInfoBox[i].innerHTML = "+";
-            infoBox[i].innerHTML = "";
+            btnInfoBox[i1].innerHTML = "+";
+            infoBox[i1].innerHTML = "";
         }
     });
 }
