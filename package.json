@@ -8,8 +8,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
