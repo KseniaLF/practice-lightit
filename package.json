@@ -2,15 +2,14 @@
   "name": "practice-lightit",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "dependencies": {
     "lodash.debounce": "^4.0.8",
     "parcel": "^2.8.1"
   },
   "devDependencies": {},
   "scripts": {
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
